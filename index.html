@@ -1,50 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandesh | Portfolio</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandesh Neupane | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="logo-text">SN</span>
+      </div>
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+      <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Header -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Home Section -->
-    <section class="home" id="home">
-    <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Sandesh Neupane</h1>
-        <h3>And I'm a <span>Web Developer</span></h3>
-
-        <p>
-            I’m a web developer with a passion for creating modern,
-            responsive and visually appealing websites.
-        </p>
-    </div>
-
-    <div class="home-img">
-        <div class="glow-circle">
-            <img src="./images/1000271671.jpg" alt="Profile">
+  <main>
+    <div class="hero">
+      <div>
+        <h1>Hi, I'm <span>Sandesh Neupane</span></h1>
+        <p>Electronics, Communication, and Information Engineering student passionate about technology and problem solving. I enjoy building real world solutions by combining electronics, communication systems, and software. Focused on hands-on projects and continuous learning.</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+      <div class="hero-right">
+        <img src="images/1000271671.jpg" alt="Sandesh Neupane" />
+        <div class="career-focus">
+          <h3>Career Focus</h3>
+          <ul>
+            <li>• Machine Learning & Artificial Intelligence</li>
+            <li>• Full-Stack Development</li>
+            <li>• Software Engineering</li>
+          </ul>
         </div>
+      </div>
     </div>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skills-column">
+          <h3>Frontend Development</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3>Machine Learning & AI</h3>
+          <ul>
+            <li>Machine Learning</li>
+            <li>NumPy</li>
+            <li>Pandas</li>
+            <li>PyTorch</li>
+            <li>TensorFlow</li>
+            <li>Logical Reasoning (Prolog)</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3>Programming Languages & Backend</h3>
+          <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Enhanced Pong Game</h3>
+          <p>A Pong game with multiplayer, AI opponent, sound effects, and visual effects.</p>
+          <span>Tech Stack:</span> JavaScript, HTML, CSS
+          <div class="project-link">
+            <a href="https://github.com/yourusername/pong-game" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Shadow Realm Escape</h3>
+          <p>A puzzle-platformer game where players switch between real and shadow worlds to solve puzzles and avoid traps.</p>
+          <span>Tech Stack:</span> JavaScript, HTML, CSS
+          <div class="project-link">
+            <a href="https://github.com/yourusername/shadow-realm-escape" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project">
+          <h3>AI Lab Assignments</h3>
+          <p>Prolog programs demonstrating logic programming, reflex agents, and list manipulation.</p>
+          <span>Tech Stack:</span> SWI-Prolog
+          <div class="project-link">
+            <a href="https://github.com/yourusername/ai-lab-assignments" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <p>Have a project in mind or just want to say hi? My inbox is always open.</p>
+          <p>Email: <a href="mailto:sandesh10n@gmail.com">sandesh10n@gmail.com</a></p>
+          <h3>Connect With Me</h3>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/sandesh-neupane-735987317/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://x.com/Heisenberg007s" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://github.com/sandesh10n" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your message here..." rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sandesh Neupane.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
