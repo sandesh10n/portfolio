@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sandesh Neupane — portfolio showcasing projects in software, game development, and machine learning." />
   <title>Sandesh Neupane | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -10,12 +11,16 @@
 <body>
   <header>
     <nav>
-      <div class="logo">
+      <div class="logo" aria-hidden="true">
         <span class="logo-text">SN</span>
       </div>
-      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+      <button class="menu-btn" id="menuBtn" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
+
       <ul id="menu">
-        <li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -25,24 +30,26 @@
   </header>
 
   <main>
-    <div class="hero">
+    <section class="hero" id="home">
       <div>
         <h1>Hi, I'm <span>Sandesh Neupane</span></h1>
-        <p>Electronics, Communication, and Information Engineering student passionate about technology and problem solving. I enjoy building real world solutions by combining electronics, communication systems, and software. Focused on hands-on projects and continuous learning.</p>
+        <p>Electronics, Communication, and Information Engineering student with interests in software engineering and intelligent systems. Driven by hands-on projects, logical problem solving, and continuous skill development.</p>
         <a href="#projects" class="btn">View My Work</a>
+        <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
       </div>
-      <div class="hero-right">
-        <img src="images/1000271671.jpg" alt="Sandesh Neupane" />
-        <div class="career-focus">
+      <div class="hero-right" aria-hidden="false">
+        <!-- Replace the src with your real portrait image path -->
+        <img src="images/1000271671.jpg" alt="Portrait of Sandesh Neupane" loading="lazy" />
+        <div class="career-focus" aria-hidden="false">
           <h3>Career Focus</h3>
           <ul>
-            <li>• Machine Learning & Artificial Intelligence</li>
-            <li>• Full-Stack Development</li>
-            <li>• Software Engineering</li>
+            <li>Machine Learning & AI</li>
+            <li>Full Stack Development</li>
+            <li>Software Engineering</li>
           </ul>
         </div>
       </div>
-    </div>
+    </section>
 
     <section id="skills">
       <h2>Skills</h2>
@@ -84,27 +91,29 @@
       <h2>Projects</h2>
       <div class="projects">
         <div class="project">
-          <h3>Enhanced Pong Game</h3>
-          <p>A Pong game with multiplayer, AI opponent, sound effects, and visual effects.</p>
-          <span>Tech Stack:</span> JavaScript, HTML, CSS
+          <h3>Cricket Score Board</h3>
+          <p>A cricket score sheet program for managing match scores, player statistics, and innings data efficiently.</p>
+          <p class="tech-stack"><strong>Tech Stack:</strong> C</p>
           <div class="project-link">
-            <a href="https://github.com/yourusername/pong-game" target="_blank">View on GitHub</a>
+            <a href="https://github.com/sandesh10n/cricket-score-sheet" target="_blank" rel="noopener">View on GitHub</a>
           </div>
         </div>
+
         <div class="project">
-          <h3>Shadow Realm Escape</h3>
-          <p>A puzzle-platformer game where players switch between real and shadow worlds to solve puzzles and avoid traps.</p>
-          <span>Tech Stack:</span> JavaScript, HTML, CSS
+          <h3>Game Hub</h3>
+          <p>A GameHub application featuring multiple mini games with an interactive interface and smooth gameplay experience.</p>
+          <p class="tech-stack"><strong>Tech Stack:</strong> C++, SFML, Raylib</p>
           <div class="project-link">
-            <a href="https://github.com/yourusername/shadow-realm-escape" target="_blank">View on GitHub</a>
+            <a href="https://github.com/sandesh10n/game-hub" target="_blank" rel="noopener">View on GitHub</a>
           </div>
         </div>
+
         <div class="project">
-          <h3>AI Lab Assignments</h3>
-          <p>Prolog programs demonstrating logic programming, reflex agents, and list manipulation.</p>
-          <span>Tech Stack:</span> SWI-Prolog
+          <h3>Rock Paper Scissors</h3>
+          <p>A Rock Paper Scissors game with interactive gameplay, score tracking, and simple user friendly controls.</p>
+          <p class="tech-stack"><strong>Tech Stack:</strong> JavaScript, HTML, CSS</p>
           <div class="project-link">
-            <a href="https://github.com/yourusername/ai-lab-assignments" target="_blank">View on GitHub</a>
+            <a href="https://github.com/sandesh10n/Rock_Paper_Scissors" target="_blank" rel="noopener">View on GitHub</a>
           </div>
         </div>
       </div>
@@ -114,17 +123,18 @@
       <h2>Contact Me</h2>
       <div class="contact-container">
         <div class="contact-info">
-          <p>Have a project in mind or just want to say hi? My inbox is always open.</p>
+          <p>Whether you have a project in mind or simply want to connect, my inbox is always open.</p>
           <p>Email: <a href="mailto:sandesh10n@gmail.com">sandesh10n@gmail.com</a></p>
           <h3>Connect With Me</h3>
           <div class="social-links">
-            <a href="https://www.linkedin.com/in/sandesh-neupane-735987317/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://x.com/Heisenberg007s" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-            <a href="https://github.com/sandesh10n" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/sandesh-neupane-735987317/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://x.com/Heisenberg007s" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://github.com/sandesh10n" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
           </div>
         </div>
+
         <div class="contact-form">
-          <form>
+          <form id="contactForm">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <input type="text" name="subject" placeholder="Subject" required>
